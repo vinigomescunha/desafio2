@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Estudantes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <div class=status></div>
+
+    <form login-form class="form-actions">
+        <div>
+            <div>
+                Cadastre-se em nossa base de dados exclusiva, em breve enviaremos dicas e informacoes de como voce pode
+                crescer
+                nos concursos.
+            </div>
+        </div>
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+        <label for="email-l" class="sr-only">Email</label>
+        <input login-email type="email" id="email-l" class="form-control" placeholder="Email" required>
+        <label for="token-l" class="sr-only">Token</label>
+        <input login-token type="password" id="token-l" class="form-control" placeholder="Token" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        <p class="mt-5 mb-3 text-muted">&copy; <a cadastro class=actions href="">Cadastro</a></p>
+    </form>
+    <form cadastro-form class="form-actions">
+        <div>
+            <div>
+                Ao se cadastrar guarde esse Token para poder ver o status de seus dados.
+            </div>
+        </div>
+        <h1 class="h3 mb-3 font-weight-normal">Cadastro</h1>
+        <label for="nome-c" class="sr-only">Nome</label>
+        <input cadastro-nome type="text" id="nome-c" class="form-control" placeholder="Nome" required>
+        <label for="email-c" class="sr-only">Email</label>
+        <input cadastro-email type="email" id="email-c" class="form-control" placeholder="Email" required>
+        <label for="token-c" class="sr-only">Token</label>
+        <input cadastro-token type="password" id="token-c" class="form-control" placeholder="Token" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
+        <p class="mt-5 mb-3 text-muted">&copy; <a login class=actions href="">Login</a></p>
+    </form>
+</body>
+<script src="/index.js"></script>
+
+</html>
