@@ -1,4 +1,4 @@
-const serverUrl = 'http://localhost:8080';
+const serverUrl = '';
 const hideForms = () => {
   Array.from(document.querySelectorAll('form.form-actions')).forEach(f => {
     f.style.display = 'none';
