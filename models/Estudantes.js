@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // TODO: Refactoring essa chamada no mongo para um datasource
-mongoose.connect('mongodb://localhost:27017/estudantes', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://vinicius:vinicius@cluster0-1bbn6.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true });
 
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
