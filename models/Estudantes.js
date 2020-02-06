@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+// TODO: Refactoring essa chamada no mongo para um datasource
 mongoose.connect('mongodb://localhost:27017/estudantes', {useNewUrlParser: true, useUnifiedTopology: true });
 
 const Schema = mongoose.Schema;
